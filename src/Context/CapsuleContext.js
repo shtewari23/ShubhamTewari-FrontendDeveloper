@@ -1,5 +1,5 @@
 // Context/CapsuleContext.js
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
 const CapsuleContext = createContext();
 
@@ -12,7 +12,9 @@ const CapsuleProvider = ({ children }) => {
   };
 
   return (
-    <CapsuleContext.Provider value={{ allCapsules, filteredData, setFilteredCapsules }}>
+    <CapsuleContext.Provider
+      value={{ allCapsules, filteredData, setFilteredCapsules }}
+    >
       {children}
     </CapsuleContext.Provider>
   );
@@ -21,7 +23,7 @@ const CapsuleProvider = ({ children }) => {
 const useCapsuleContext = () => {
   const context = useContext(CapsuleContext);
   if (!context) {
-    throw new Error('useCapsuleContext must be used within a CapsuleProvider');
+    throw new Error("useCapsuleContext must be used within a CapsuleProvider");
   }
   return context;
 };

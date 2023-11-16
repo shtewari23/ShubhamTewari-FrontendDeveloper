@@ -5,3 +5,7 @@ height: 100%;
 .bg-gradient-hover{
     letter-spacing: 10px;
 }
+.bg-menu-hover:hover {
+    background: linear-gradient(180deg, rgba(203, 0, 255, 0.50) 0%, rgba(141, 54, 223, 0.00) 100%);
+    text-transform: uppercase;
+}

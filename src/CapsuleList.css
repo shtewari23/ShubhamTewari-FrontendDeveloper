@@ -1,0 +1,7 @@
+.bg-list-hover:hover {
+    background: black;
+height: 100%; 
+}
+.p-color:hover{
+    color: rgb(0, 0, 79);
+}
